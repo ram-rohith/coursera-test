@@ -1,12 +1,11 @@
-var users = [];
 (function (window) {
-	var users = ["Rohith", "Varsha", "Madhav", "Jackson", "Jimmy", "Julie", "Sai teja", "Praneeth", "Lolly", "Juliet","Romeo","Jaydev","Jaya","Javeed","Kishore"];
-	for (var i=0; i < users.length; i++) {
-	  var first = users[i].charAt(0).toLowerCase();
-		if (first== "j") {
-		  byeSpeaker.speak(users[i]);
+	var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula", "Laura", "Jim"];
+	for (var i=0; i < names.length; i++ /* fill in parts of the 'for' loop to loop over names array */) {
+	  var firstLetter = names[i].charAt(0).toLowerCase();
+		if (firstLetter == "j" /* fill in condition here */) {
+		  byeSpeaker.speak(names[i]);
 		} else {
-		  helloSpeaker.speak(users[i]);
+		  helloSpeaker.speak(names[i]);
 		}
 	}
 })(window);
